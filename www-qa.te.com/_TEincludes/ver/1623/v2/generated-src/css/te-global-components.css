@@ -35261,15 +35261,20 @@ html.oldie .te-am-your-acct-change-email.loader {
 
 .language-expansion-modal .side-panel-content {
     overflow: hidden;
-    height: calc(100vh - 420px);
+    height: calc(100vh - 380px);
     /* padding-right:8px; */
+}
+
+@media (min-width:720px) {
+    .language-expansion-modal .side-panel-content {overflow: auto;height: calc(100vh - 300px);}
 }
 
 @media (max-width:719px) {
     body.responsive .language-expansion-modal .side-panel-content {
         /* height:100vh; */
         /* min-height:298px; */
-        background: orange;
+        /*         background: orange; */
+        overflow: hidden;
     }
 }
 
@@ -35293,7 +35298,7 @@ html.oldie .te-am-your-acct-change-email.loader {
     line-height:1.57142857;
     height:40px;
     padding-left:38px;
-    margin-bottom:20px;
+    margin-bottom: 0;
     appearance:none;
     -webkit-appearance:none;
     -moz-appearance:none;
@@ -35484,27 +35489,30 @@ html.oldie .te-am-your-acct-change-email.loader {
         padding:0;
         /* margin-bottom:-146px !important; */
         overflow: scroll;
-        height: calc(100vh - 580px);
+        height: calc(100vh - 530px);
     }
 }
 
 .language-expansion-modal .side-panel-content .side-panel-search {
-    height: calc(100vh - 520px);
+    height: calc(100vh - 521px);
     /* height:40px; */
     transform:translate3d(0, 0, 0);
-    border:solid .5px #aaa;
+    border: solid .5px #aaa;
     border-radius:5px;
-    padding:11px 19px 210px 20px;
-    margin-top:-20px;
+    padding: 11px 19px 20px 20px;
+    /* margin-top:-20px; */
     z-index:99999;
-    position:relative;
+    /* position:relative; */
+    ve; */
     background-color:#fff
 }
 
 @media (max-width:719px) {
     body.responsive .language-expansion-modal .side-panel-content .side-panel-search {
         /* height:100%; */
-        padding-bottom:270px;
+        /* padding-bottom:270px; */
+        height: calc(100vh - 528px);
+        /* margin-top: -21px; */
     }
 }
 
@@ -35782,10 +35790,27 @@ html.oldie .te-am-your-acct-change-email.loader {
     width:107%;
     position:absolute;
     margin-top:12px;
-    overflow:hidden scroll;
+    overflow: scroll;
     padding:0 10px 0 0;
-    height: calc(100vh - 560px);
+    height: calc(100vh - 500px);
 }
+
+@media (min-width:720px) {
+
+.language-expansion-modal .side-panel-content .filterSectionDiv,
+.language-expansion-modal .side-panel-content .filterSectionDivChina {
+    /* max-height:100%; */
+    /* min-height:145px; */
+    /*     background:#fff;
+    width:107%;
+    position:absolute;
+    margin-top:12px;
+    overflow:hidden scroll;
+    padding:0 10px 0 0; */
+    height: calc(100vh - 610px);
+}
+}
+
 @media (max-width:719px) {
 .language-expansion-modal .side-panel-content .filterSectionDiv,
 .language-expansion-modal .side-panel-content .filterSectionDivChina {/* height: 100%; */}
@@ -35798,7 +35823,7 @@ html.oldie .te-am-your-acct-change-email.loader {
 @media (max-width:719px) {
     body.responsive .language-expansion-modal .side-panel-content .filterSectionDivChina {
         width:106%;
-        min-height:237px
+/*         min-height:237px */
     }
 }
 
@@ -35942,13 +35967,13 @@ html.oldie .te-am-your-acct-change-email.loader {
 }
 
 .language-expansion-modal .side-panel-content .filterSectionDiv {
-    margin-top:21px
+    margin-top: 12px;
 }
 
 @media (max-width:719px) {
     body.responsive .language-expansion-modal .side-panel-content .filterSectionDiv {
         width:106%;
-        /* min-height:237px; */
+        height: calc(100vh - 600px);
     }
 }
 
@@ -38709,7 +38734,7 @@ html.oldie .te-am-your-acct-change-email.loader {
 
 @media only screen and (max-width: 719px) {
     .filterSectionDiv {
-        min-height: 237px !important
+/*         min-height: 237px !important */
     }
 
 
@@ -38738,6 +38763,4 @@ html.oldie .te-am-your-acct-change-email.loader {
 
 @media(min-width: 720px){
 .side-panel-footer{
-    padding: 0 42px 25px 0;
-}
-}
+    padding: 0 42px 25px 0
