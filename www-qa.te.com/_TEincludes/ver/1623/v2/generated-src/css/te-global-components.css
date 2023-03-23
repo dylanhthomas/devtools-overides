@@ -35503,7 +35503,6 @@ html.oldie .te-am-your-acct-change-email.loader {
     /* margin-top:-20px; */
     z-index:99999;
     /* position:relative; */
-    ve; */
     background-color:#fff
 }
 
@@ -35790,7 +35789,7 @@ html.oldie .te-am-your-acct-change-email.loader {
     width:107%;
     position:absolute;
     margin-top:12px;
-    overflow: scroll;
+    overflow: hidden scroll;
     padding:0 10px 0 0;
     height: calc(100vh - 500px);
 }
@@ -35854,7 +35853,7 @@ html.oldie .te-am-your-acct-change-email.loader {
     min-width:100%;
     display:table;
     min-height:34px;
-    padding:8px 0
+    padding:8px 0;
 }
 
 .language-expansion-modal .side-panel-content .filterSectionDiv .filterSection li .countrySections dt p,
@@ -35891,7 +35890,7 @@ html.oldie .te-am-your-acct-change-email.loader {
 .language-expansion-modal .side-panel-content .filterSectionDiv .filterSection li .countrySections li,
 .language-expansion-modal .side-panel-content .filterSectionDivChina .filterSection li .countrySections li {
     cursor:default;
-    border-bottom:1px solid #d9d8d6
+    border-bottom:1px solid #d9d8d6;
 }
 
 .language-expansion-modal .side-panel-content .filterSectionDivChina .filterSection li .countrySections li a,
@@ -35972,8 +35971,9 @@ html.oldie .te-am-your-acct-change-email.loader {
 
 @media (max-width:719px) {
     body.responsive .language-expansion-modal .side-panel-content .filterSectionDiv {
-        width:106%;
+        width: 100%;
         height: calc(100vh - 600px);
+        padding: 0;
     }
 }
 
@@ -35999,7 +35999,7 @@ html.oldie .te-am-your-acct-change-email.loader {
 
 .language-expansion-modal .side-panel-content .filterSectionDiv .filterSection li .countrySections dt span {
     position:absolute;
-    width:100%;
+    width: calc(100% + 10px);
     z-index:1;
     border:1px solid #d9d8d6;
     height:1px;
@@ -38764,3 +38764,14 @@ html.oldie .te-am-your-acct-change-email.loader {
 @media(min-width: 720px){
 .side-panel-footer{
     padding: 0 42px 25px 0
+}
+}
+
+
+
+/* @media only screen and (max-width: 719px){
+::-webkit-scrollbar{
+    display: none;
+  }
+
+} */
