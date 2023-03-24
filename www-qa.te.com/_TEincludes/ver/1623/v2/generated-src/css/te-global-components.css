@@ -35494,7 +35494,7 @@ html.oldie .te-am-your-acct-change-email.loader {
 }
 
 .language-expansion-modal .side-panel-content .side-panel-search {
-    height: calc(100vh - 521px);
+    height: calc(100vh - 446px);
     /* height:40px; */
     transform:translate3d(0, 0, 0);
     border: solid .5px #aaa;
@@ -35783,32 +35783,15 @@ html.oldie .te-am-your-acct-change-email.loader {
 
 .language-expansion-modal .side-panel-content .filterSectionDiv,
 .language-expansion-modal .side-panel-content .filterSectionDivChina {
-    /* max-height:100%; */
-    /* min-height:145px; */
     background:#fff;
     width:107%;
     position:absolute;
     margin-top:12px;
     overflow: hidden scroll;
     padding:0 10px 0 0;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 512px);
 }
 
-@media (min-width:720px) {
-
-.language-expansion-modal .side-panel-content .filterSectionDiv,
-.language-expansion-modal .side-panel-content .filterSectionDivChina {
-    /* max-height:100%; */
-    /* min-height:145px; */
-    /*     background:#fff;
-    width:107%;
-    position:absolute;
-    margin-top:12px;
-    overflow:hidden scroll;
-    padding:0 10px 0 0; */
-    height: calc(100vh - 610px);
-}
-}
 
 @media (max-width:719px) {
 .language-expansion-modal .side-panel-content .filterSectionDiv,
@@ -35965,9 +35948,6 @@ html.oldie .te-am-your-acct-change-email.loader {
     }
 }
 
-.language-expansion-modal .side-panel-content .filterSectionDiv {
-    margin-top: 12px;
-}
 
 @media (max-width:719px) {
     body.responsive .language-expansion-modal .side-panel-content .filterSectionDiv {
@@ -35977,11 +35957,6 @@ html.oldie .te-am-your-acct-change-email.loader {
     }
 }
 
-@media (min-width:1440px) {
-    body.responsive.wide-screen-support .language-expansion-modal .side-panel-content .filterSectionDiv {
-        height:100%
-    }
-}
 
 .language-expansion-modal .side-panel-content .filterSectionDiv.show-ship-to-options {
     display:block
@@ -35999,12 +35974,17 @@ html.oldie .te-am-your-acct-change-email.loader {
 
 .language-expansion-modal .side-panel-content .filterSectionDiv .filterSection li .countrySections dt span {
     position:absolute;
-    width: calc(100% + 10px);
+    width: 100%;
     z-index:1;
     border:1px solid #d9d8d6;
     height:1px;
     left:0;
     margin-left:-10px
+}
+@media (max-width:720px) {
+.language-expansion-modal .side-panel-content .filterSectionDiv .filterSection li .countrySections dt span {
+    width: calc(100% + 10px);
+}
 }
 
 .language-expansion-modal .side-panel-content .filterSectionDiv .filterSection li .countrySections li a,
@@ -38775,3 +38755,6 @@ html.oldie .te-am-your-acct-change-email.loader {
   }
 
 } */
+
+
+
